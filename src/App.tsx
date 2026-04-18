@@ -1,6 +1,7 @@
 import Hero from './components/Hero'
 import self_portrait from './assets/self_portrait.jpeg'
 import centrova_overview from './assets/centrova_overview.png'
+import main_page from './assets/main_page.png'
 import TeaserCard from './components/TeaserCard'
 export default function App() {
   return (
@@ -23,6 +24,15 @@ export default function App() {
           imageSrc={centrova_overview}
           imageAlt="SQS to Lambda to Bedrock architecture"
           link="/centrova"
+        />
+      </div>
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8">
+        <TeaserCard
+          title="UCSBGeoGuessr"
+          description="GeoGuessr inspired app"
+          imageSrc={main_page}
+          imageAlt="UCSBGeoGuessr main page"
+          link="/geoguessr"
         />
       </div>
     </>
