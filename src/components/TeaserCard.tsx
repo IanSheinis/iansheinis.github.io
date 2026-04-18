@@ -5,6 +5,7 @@ interface ProjectCardProps {
   imageAlt: string
   link: string
   linkText?: string
+  imageFit: "cover" | "contain" 
 }
 
 const TeaserCard = ({
@@ -14,13 +15,15 @@ const TeaserCard = ({
   imageAlt,
   link,
   linkText = "View project",
+  imageFit
+  
 }: ProjectCardProps) => {
   return (
     <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-xs dark:border-gray-800 dark:bg-gray-900 dark:shadow-gray-700/25">
       <img
         alt={imageAlt}
         src={imageSrc}
-        className="h-56 w-full object-contain"
+        className={`h-56 w-full ${imageFit === "cover" ? "object-cover" : "object-contain"}`}
       />
       <div className="p-4 sm:p-6">
         <a href={link}>
@@ -45,4 +48,4 @@ const TeaserCard = ({
   )
 }
 
-export default ProjectCard
+export default TeaserCard

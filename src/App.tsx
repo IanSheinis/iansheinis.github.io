@@ -23,6 +23,7 @@ export default function App() {
           description="Built the serverless backend infrastructure for a clinical-trial-matching platform, including an async SQS pipeline for AI-powered patient matching."
           imageSrc={centrova_overview}
           imageAlt="SQS to Lambda to Bedrock architecture"
+          imageFit='contain'
           link="/centrova"
         />
       </div>
@@ -32,6 +33,7 @@ export default function App() {
           description="GeoGuessr inspired app"
           imageSrc={main_page}
           imageAlt="UCSBGeoGuessr main page"
+          imageFit='cover'
           link="/geoguessr"
         />
       </div>
