@@ -7,7 +7,7 @@ interface ProjectCardProps {
   linkText?: string
 }
 
-const ProjectCard = ({
+const TeaserCard = ({
   title,
   description,
   imageSrc,
