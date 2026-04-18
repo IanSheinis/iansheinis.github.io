@@ -1,3 +1,4 @@
+# Taken from https://github.com/sitek94/vite-deploy-demo?tab=readme-ov-file
 name: Deploy
 
 on:
@@ -45,7 +46,7 @@ jobs:
           name: production-files
           path: ./dist
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages # Creates a new branch named gh-pages (Make sure to enable write permissions in git actions)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
