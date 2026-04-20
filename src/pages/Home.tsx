@@ -18,6 +18,14 @@ import TeaserCard from '../components/TeaserCard'
             { label: "LinkedIn", href: "https://www.linkedin.com/in/ian-sheinis" },
             ]}
         />
+
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-12 pb-4">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center">
+                Projects I'm proud of:
+            </h2>
+        </div>
+
+
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8">
             <TeaserCard
             title="Centrova — Clinical Trial Matching"
