@@ -41,11 +41,15 @@ const ProjectSection = ({
             </div>
           </div>
           <div className={reverse ? "md:order-1" : ""}>
-            <a href={imageSrc} target="_blank" rel="noopener noreferrer">
+            <a
+                href={`#/diagram?src=${encodeURIComponent(imageSrc)}&alt=${encodeURIComponent(imageAlt)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <img
-                src={imageSrc}
-                className="w-full rounded cursor-pointer hover:opacity-90 transition-opacity"
-                alt={imageAlt}
+                    src={imageSrc}
+                    className="w-full rounded cursor-pointer hover:opacity-90 transition-opacity"
+                    alt={imageAlt}
                 />
             </a>
           </div>

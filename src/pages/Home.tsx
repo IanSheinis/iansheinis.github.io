@@ -14,8 +14,8 @@ import TeaserCard from '../components/TeaserCard'
             imageAlt="Self Portrait"
             imageDesc="picture of me watching cloudformation rollback"
             links={[
-            { label: "GitHub", href: "https://github.com/IanSheinis" },
-            { label: "LinkedIn", href: "https://www.linkedin.com/in/ian-sheinis" },
+                { label: "GitHub", href: "https://github.com/IanSheinis" },
+                { label: "LinkedIn", href: "https://www.linkedin.com/in/ian-sheinis" },
             ]}
         />
 
@@ -28,22 +28,22 @@ import TeaserCard from '../components/TeaserCard'
 
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8">
             <TeaserCard
-            title="Centrova — Clinical Trial Matching"
-            description="Built the serverless backend infrastructure for a clinical-trial-matching platform, including an async SQS pipeline for AI-powered patient matching."
-            imageSrc={centrova_overview}
-            imageAlt="SQS to Lambda to Bedrock architecture"
-            imageFit='contain'
-            link="/centrova"
+                title="Centrova — Clinical Trial Matching"
+                description="Built the serverless backend infrastructure for a clinical-trial-matching platform, including an async SQS pipeline for AI-powered patient matching."
+                imageSrc={centrova_overview}
+                imageAlt="SQS to Lambda to Bedrock architecture"
+                imageFit='contain'
+                link="/centrova"
             />
         </div>
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8">
             <TeaserCard
-            title="UCSBGeoGuessr"
-            description="GeoGuessr inspired app"
-            imageSrc={main_page}
-            imageAlt="UCSBGeoGuessr main page"
-            imageFit='cover'
-            link="/ucsbgeoguessr"
+                title="UCSBGeoGuessr"
+                description="GeoGuessr inspired app"
+                imageSrc={main_page}
+                imageAlt="UCSBGeoGuessr main page"
+                imageFit='cover'
+                link="/ucsbgeoguessr"
             />
         </div>
         </>
